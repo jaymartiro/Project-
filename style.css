@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.full-height {
+    height: 100vh; 
+}
+
+.black-background {
+    background-color: black;
+    height: 100%;
+}
+
+.profile-container, .subject-container {
+    height: 100%;
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.profile-container {
+    background-image: url('./image/kie.jpg'); 
+}
+
+.subject-container {
+    background-image: url('./image/Tio.gif'); 
+}
+
+.profile-info img {
+    border-radius: 50%;
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+}
+
+.social-icons i {
+    font-size: 2rem; 
+    margin-right: 15px;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.subject-info {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    flex-direction: row; 
+}
+
+.subject-info img {
+    margin-left: 20px; 
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.subject-title {
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 30px;
+    background-color: yellowgreen;
+}
+
+/* Corrected media queries */
+@media (max-width: 768px) {
+    .subject-title {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .subject-title {
+        font-size: 24px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    flex: 1;
+    min-width: 300px;
+}
